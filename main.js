@@ -7,6 +7,7 @@ import {
   Text,
   View
 } from 'react-native';
+import styles from './gen/styles/main';
 
 import Instructions from './gen/components/instructions';
 import Board from './gen/components/board';
@@ -14,7 +15,7 @@ import Board from './gen/components/board';
 class TicReactToe extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.mainContainer}>
         <Instructions />
         <Board />
       </View>
