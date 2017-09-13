@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import styles from '../styles/instructions.js';
 
 class Instructions extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text>
           Tap a section of the grid to take your turn
         </Text>
