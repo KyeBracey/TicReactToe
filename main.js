@@ -9,12 +9,14 @@ import {
 } from 'react-native';
 
 import Instructions from './gen/components/instructions';
+import Board from './gen/components/board';
 
 class TicReactToe extends React.Component {
   render() {
     return (
       <View>
         <Instructions />
+        <Board />
       </View>
     );
   }
