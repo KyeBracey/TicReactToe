@@ -2,11 +2,20 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   boardContainer: {
-    alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 10,
     borderWidth: 3,
-    height: 300,
-    width: 300,
+    height: 306,
+    width: 306,
+  },
+
+  boxText: {
+    paddingLeft: 23,
+    fontSize: 80,
+    width: 100,
+    height: 90,
   }
 });
 
