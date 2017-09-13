@@ -8,20 +8,13 @@ import {
   View
 } from 'react-native';
 
+import Instructions from './gen/components/instructions';
+
 export default class TicReactToe extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit main.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <Instructions />
       </View>
     );
   }
