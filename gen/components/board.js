@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ListView } from 'react-native';
+import { Text, ListView, View } from 'react-native';
 import styles from '../styles/board';
 
 class Board extends React.Component {
@@ -13,11 +13,17 @@ class Board extends React.Component {
 
   render() {
     return(
-      <ListView
-        contentContainerStyle={styles.boardContainer}
-        dataSource={this.state.dataSource}
-        renderRow={(data) => <Text style={styles.boxText}>{data}</Text>}
-      />
+      <View style={styles.container}>
+        <ListView
+          contentContainerStyle={styles.boardContainer}
+          dataSource={this.state.dataSource}
+          renderRow={(data) => <Text style={styles.boxText}>{data}</Text>}
+        />
+        <View style={styles.lineY1} />
+        <View style={styles.lineY2} />
+        <View style={styles.lineX1} />
+        <View style={styles.lineX2} />
+      </View>
     );
   }
 }

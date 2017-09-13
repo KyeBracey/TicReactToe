@@ -5,8 +5,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 10,
-    borderWidth: 3,
     height: 306,
     width: 306,
   },
@@ -15,7 +13,51 @@ const styles = StyleSheet.create({
     paddingLeft: 23,
     fontSize: 80,
     width: 100,
-    height: 90,
+    height: 100,
+  },
+
+  container: {
+    marginTop: 30,
+  },
+
+  lineY1: {
+    backgroundColor: 'black',
+    height: 306,
+    width: 3,
+    position: 'absolute',
+    transform: [
+      { translateX: 100 }
+    ]
+  },
+
+  lineY2: {
+    backgroundColor: 'black',
+    height: 306,
+    width: 3,
+    position: 'absolute',
+    transform: [
+      { translateX: 200 }
+    ]
+  },
+
+  lineX1: {
+    backgroundColor: 'black',
+    height: 3,
+    width: 306,
+    position: 'absolute',
+    transform: [
+      { translateY: 100 }
+    ]
+  },
+
+  lineX2: {
+    backgroundColor: 'black',
+    height: 3,
+    width: 306,
+    position: 'absolute',
+    transform: [
+      { translateY: 200 }
+    ]
   }
 });
 
