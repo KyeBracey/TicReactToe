@@ -10,7 +10,7 @@ import {
 
 import Instructions from './gen/components/instructions';
 
-export default class TicReactToe extends React.Component {
+class TicReactToe extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -19,6 +19,8 @@ export default class TicReactToe extends React.Component {
     );
   }
 }
+
+export default TicReactToe;
 
 const styles = StyleSheet.create({
   container: {
