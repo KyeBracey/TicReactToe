@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListView, Text, TouchableNativeFeedback, View } from 'react-native';
+import { Alert, ListView, Text, TouchableNativeFeedback, View } from 'react-native';
 import styles from '../styles/board';
 
 import Cell from './cell';
@@ -18,11 +18,13 @@ class Board extends React.Component {
 
   updateCell(position) {
     const boardCells = this.state.boardCells;
-    boardCells[position] = this.state.turn;
-    console.log(`${this.state.turn} played cell ${position}`);
-    const nextTurn = PLAYERS.filter((player) => { return player != this.state.turn; })
-    console.log(`Next turn: ${nextTurn}`);
-    this.setState({ boardCells: boardCells, turn: nextTurn});
+    if(boardCells[position]) {
+      Alert.alert('Error', 'Cannot overwrite cells - please select an empty cell')
+    } else {
+      boardCells[position] = this.state.turn;
+      const nextTurn = PLAYERS.filter((player) => { return player != this.state.turn; })
+      this.setState({ boardCells: boardCells, turn: nextTurn});
+    }
   }
 
   render() {
