@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
 
+  turn: {
+    textAlign: 'center'
+  },
+
   lineY1: {
     backgroundColor: 'black',
     height: 306,

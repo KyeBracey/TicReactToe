@@ -12,9 +12,6 @@ class Instructions extends React.Component {
         <Text>
           Make a vertical, horizontal or diagonal line of 3 to win!
         </Text>
-        <Text>
-          [player]s turn
-        </Text>
       </View>
     )
   }
