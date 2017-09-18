@@ -9,13 +9,6 @@ const styles = StyleSheet.create({
     width: 306,
   },
 
-  boxText: {
-    paddingLeft: 23,
-    fontSize: 80,
-    width: 100,
-    height: 100,
-  },
-
   container: {
     marginTop: 30,
   },
