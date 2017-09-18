@@ -3,8 +3,7 @@ import { Alert, ListView, Text, TouchableNativeFeedback, View } from 'react-nati
 import styles from '../styles/board';
 
 import Cell from './cell';
-
-const PLAYERS = ['X', 'O'];
+import { PLAYERS } from '../constants';
 
 class Board extends React.Component {
   constructor() {
